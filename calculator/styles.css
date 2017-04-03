@@ -1,0 +1,74 @@
+body{
+    background-color: cadetblue;
+}
+.br{
+    border-radius: 4px;
+}
+.fb{
+    width: 19%;
+    height: 95%;
+    background-color: aquamarine;
+    float: left;
+    margin: 3px 0.5%;
+    font-size: 40px;
+    text-align: center;
+    color: #777;
+}
+.fb:hover{
+    background-color: darkseagreen;
+}
+
+.num{
+    width: 31.2%;
+    height: 95%;
+    background-color: aquamarine;
+    float: left;
+    margin: 0px 1%;
+    text-align: center;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    color: #777;
+}
+.num:hover{
+    background-color: darkseagreen;
+}
+.ll{
+    width: 100%;
+    height: 18%;
+    background-color: aliceblue;
+    margin: 0px auto;
+    margin-right: 0px;
+}
+#wrapper{
+    width: 50%;
+    height: 500px;
+    background-color: aliceblue;
+    border: 2px solid #fff;
+    margin: 20px auto;
+}
+.form{
+    width: 98%;
+    height: 15%;
+    margin: 5px auto;
+    background-color: aliceblue;
+}
+.funcButtom{
+    margin : 5px auto;
+    width: 98%;
+    height: 10%; 
+    background-color: aliceblue;
+}
+.numButtom{
+    height: 300px;
+    width: 100%;
+}
+.dr{
+    width: 98%;
+}
+.inpForm{
+    height: 98%;
+    width:98%;
+    font-size: 40px;
+    
+}
