@@ -24,10 +24,11 @@ let one = () => document.getElementById("mainForm").value += 1,
 let zzz = () => document.getElementById("mainForm").value = eval(document.getElementById("mainForm").value );
 
 
-function nameF(arg1, arg2) {
-    return console.log( arg1+arg2);
-}
-nameF(4, 6);
+
+
+
+
+
 
 
 
