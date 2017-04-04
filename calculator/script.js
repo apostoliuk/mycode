@@ -9,7 +9,7 @@ let one = () => document.getElementById("mainForm").value += 1,
     eight = () => document.getElementById("mainForm").value += 8,
     nine = () => document.getElementById("mainForm").value += 9,
     zero = () => document.getElementById("mainForm").value += 0,
-    result = () => mainFun(),
+    result = () => zzz(),
     
                         /*operatoin*/
     
@@ -17,14 +17,17 @@ let one = () => document.getElementById("mainForm").value += 1,
     plus = () => document.getElementById("mainForm").value += '+',
     multiplication = () => document.getElementById("mainForm").value += '*',
     divizion = () => document.getElementById("mainForm").value += '/',
-    clearing = () => document.getElementById("mainForm").value += ' ';
+    clearing = () => document.getElementById("mainForm").value = ' ';
     
                         /*main Math Function*/
-let mainFun = () => console.log( document.getElementById("mainForm").value );
+
+let zzz = () => document.getElementById("mainForm").value = eval(document.getElementById("mainForm").value );
 
 
-
-
+function nameF(arg1, arg2) {
+    return console.log( arg1+arg2);
+}
+nameF(4, 6);
 
 
 

@@ -4,20 +4,6 @@ body{
 .br{
     border-radius: 4px;
 }
-.fb{
-    width: 19%;
-    height: 95%;
-    background-color: aquamarine;
-    float: left;
-    margin: 3px 0.5%;
-    font-size: 40px;
-    text-align: center;
-    color: #777;
-}
-.fb:hover{
-    background-color: darkseagreen;
-}
-
 .num{
     width: 31.2%;
     height: 95%;
@@ -31,7 +17,8 @@ body{
     color: #777;
 }
 .num:hover{
-    background-color: darkseagreen;
+    background-color: darkgray;
+    color: #fff;
 }
 .ll{
     width: 100%;
@@ -88,5 +75,6 @@ body{
     color: #777;
 }
 .fSum:hover{
-    background-color: darkseagreen;
+    background-color: deeppink;
+    color: #fff;
 }
