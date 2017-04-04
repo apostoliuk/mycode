@@ -9,24 +9,25 @@
 <body>
     <section id="wrapper" class="br">
         <div class="form br">
-            <input type="text" class="inpForm br" value="" id="kkk" />
-        </div>
-        <div class="funcButtom br">
-            <div class="c fb br">c</div>
-            <div class="+ fb br">+</div>
-            <div class="- fb br">-</div>
-            <div class="* fb br">*</div>
-            <div class="/ fb br">/</div>
+            <input type="text" class="inpForm br" value="" id="mainForm" />
         </div>
         <div class="ll">
-            <div class="br se num">7</div>
-            <div class="br ei num">8</div>
-            <div class="br ni num">9</div>
+            <div class="br fSum" onclick="plus()">+</div>
+            <div class="br fSum" onclick="minus()">-</div>
+            <div class="br fSum" onclick="multiplication()">*</div>
+            <div class="br fSum" onclick="divizion()">/</div>
+            <div class="br fSum" onclick="clearing()">c</div>
+        </div>
+    
+        <div class="ll">
+            <div class="br se num" onclick="seven()">7</div>
+            <div class="br ei num" onclick="eight()">8</div>
+            <div class="br ni num" onclick="nine()">9</div>
         </div> 
         <div class="ll">
-            <div class="br fo num">4</div>
-            <div class="br fi num">5</div>
-            <div class="br si num">6</div>
+            <div class="br fo num" onclick="four()">4</div>
+            <div class="br fi num" onclick="five()">5</div>
+            <div class="br si num" onclick="six()">6</div>
         </div>    
         <div class="ll">   
             <div class="br on num" onclick="one()">1</div>
@@ -34,10 +35,9 @@
             <div class="br th num" onclick="three()">3</div>
         </div>    
          <div class="ll">   
-            <div class="br num dr">=</div>
+            <div class="br num dr" onclick="result()">=</div>
+            <div class=" br num zero" onclick="zero()">0</div>
         </div>   
-            
-        </div>
        
     </section>
     <script src="script.js"></script>

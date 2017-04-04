@@ -35,7 +35,7 @@ body{
 }
 .ll{
     width: 100%;
-    height: 18%;
+    height: 16.7%;
     background-color: aliceblue;
     margin: 0px auto;
     margin-right: 0px;
@@ -64,11 +64,29 @@ body{
     width: 100%;
 }
 .dr{
-    width: 98%;
+    width: 48%;
+}
+.zero{
+    width: 48%;
 }
 .inpForm{
     height: 98%;
     width:98%;
     font-size: 40px;
-    
+    text-align: right;
+}
+.fSum{
+    width: 18%;
+    height: 95%;
+    background-color: aquamarine;
+    float: left;
+    margin: 0px 1%;
+    text-align: center;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    color: #777;
+}
+.fSum:hover{
+    background-color: darkseagreen;
 }
