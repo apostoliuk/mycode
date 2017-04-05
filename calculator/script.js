@@ -20,8 +20,9 @@ let one = () => document.getElementById("mainForm").value += 1,
     clearing = () => document.getElementById("mainForm").value = ' ';
     
                         /*main Math Function*/
+let getVal = () => document.getElementById("mainForm").value;
+let zzz = () => document.getElementById("mainForm").value = eval( getVal() );
 
-let zzz = () => document.getElementById("mainForm").value = eval(document.getElementById("mainForm").value );
 
 
 
