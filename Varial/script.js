@@ -16,22 +16,21 @@ function staticF() {
            minKey = key;
         }
     });
-////
-    
     for(let i = 0; i < Object.keys(count).length; i++) {
       let minVal = Object.keys(count)[0];
       let valСurrent = Object.keys(count)[i];
       if(count[minVal] < count[valСurrent]) {
         minVal = valСurrent;
       }
-      console.log(count[ minVal ]);
+      console.log('moda ' + count[ minVal ]);
     }  
   }());
 }staticF();
 
 
-                    
-                    
-                    
-                    
+/////////dfdfdsfds
+
+
+
+
 
