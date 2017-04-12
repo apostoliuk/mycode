@@ -1,36 +1,27 @@
 'use strict'
 
-const mainArray = [4, 4, 3, 2, 2, 2, 6, 6, 2, 2, 2, 7, 3];
+const mainArray = [];
 const varialLine = mainArray => console.log( 'варіаційний ряд ' + mainArray.sort() ); varialLine(mainArray);
 const countEl = mainArray => console.log( 'розмах ' + mainArray.length ); countEl(mainArray);
 const mediana = () => console.log('медіана ' + mainArray.sort()[Math.floor(mainArray.length/2)]); mediana();
 const vibMedium = () => console.log('середнє значення ' + mainArray.reduce((sum, current) => sum + current)/mainArray.length); vibMedium();
-function staticF() {
-  const count = {}; 
-  return ( function() {
-    mainArray.forEach(function(i) { count[i] = (count[i] || 0) + 1; });
-    console.log(count);
-    let minKey = Object.keys(count)[0];
-    Object.keys(count).forEach(function(key) {
-        if(minKey < key) { 
-           minKey = key;
+const count = {}; 
+let minKey = Object.keys(count)[0];
+mainArray.forEach(function(i) { count[i] = (count[i] || 0) + 1; });
+Object.keys(count).forEach(function(key) {
+    if(minKey < key) {minKey = key}
+});
+let minVal = Object.keys(count)[0];
+for(let i = 0; i < Object.keys(count).length; i++) {
+  let valСurrent = Object.keys(count)[i];
+  if(count[minVal] < count[valСurrent]) {
+    minVal = valСurrent;
+  }  
+}    
+let maxVal = count[minVal];
+    for(let key in count) {
+        if(count[key] === maxVal) {
+            console.log('мода ' + key);
         }
-    });
-    for(let i = 0; i < Object.keys(count).length; i++) {
-      let minVal = Object.keys(count)[0];
-      let valСurrent = Object.keys(count)[i];
-      if(count[minVal] < count[valСurrent]) {
-        minVal = valСurrent;
-      }
-      console.log('moda ' + count[ minVal ]);
-    }  
-  }());
-}staticF();
-
-
-/////////dfdfdsfds
-
-
-
-
+    }
 

@@ -24,3 +24,7 @@ let one = () => document.getElementById("mainForm").value += 1,
 
 let getVal = () => document.getElementById("mainForm").value;
 let zzz = () => document.getElementById("mainForm").value = eval( getVal() );
+
+
+
+let fun = (a, b) => a+b;fun(2,4);
