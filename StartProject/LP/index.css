@@ -1,0 +1,143 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+}
+li, a, a:hover, a:active, a:focus, a:link, a:visited {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.center-wrapp {
+  margin: 0 auto;
+}
+.global-wrapper {
+  background-color: #444;
+  width: 100%;
+}
+.wrapper {
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  background-color: rgb(56, 62, 76);
+  height: 100px;
+  width: 100%;
+  height: 77px;
+  box-sizing: border-box;
+  padding-top: 15px;
+  opacity: 0.6;
+}
+.navigation>ul {
+  text-align: center;
+  margin-top: 12px;
+}
+.navigation>ul>li {
+  display: inline;
+  border: 1px solid rgb(100, 109, 124);
+  padding: 15px 25px;
+  font-size: 20px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+  margin: 7px;
+}
+.navigation>ul>li:hover,  .navigation>ul>li:active {
+  background-color: rgb(73, 80, 95);
+}
+.navigation>ul>li>a {
+  color: #fff;
+}
+.sec1 {
+  background: url(img/bg-1.jpg);
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 614px;
+}
+.sec1>h1 {
+  font-size: 70px;
+  text-shadow: 2px 2px #000;
+  font-weight: lighter;
+  padding-top: 240px;
+}
+.sec1>h5 {
+  font-size: 29px;
+  font-weight: lighter;
+}
+.sec2 {
+  padding: 50px;
+}
+
+.brp {
+  width: 30%;
+  height: 436px;
+  float: left;
+  margin: 1.5%;
+  background-color: rgb(242, 242, 242);
+}
+.brp>h2 {
+  margin: 20px 0px 10px 0px;
+  padding: 0 20px;
+  font-size: 20px;
+}
+.brp>p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+}
+.brp>.button {
+  width: 155px;
+  height: 44px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 13px;
+  margin-top: 33px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #fff;
+}
+.button.green {
+  background-color: #178A27;
+}
+.button.green:hover {
+  background-color: rgb(69, 157, 68);
+}
+.button.blue {
+  background-color: #1686C1;
+}
+.button.blue:hover {
+  background-color: rgb(48, 176, 213);
+}
+.button.grey {
+  background-color: #852406;
+}
+.button.grey:hover {
+  background-color: rgb(200, 48, 44);
+}
+.Bootstrap>h2 {
+  color: #178A27;
+}
+.Responsive>h2 {
+  color: #1686C1;
+}
+.Parallax>h2 {
+  color: #666666;
+}
+/*.footer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #222;
+}
+*/
+.neww>li {
+  float: left;
+}
