@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.FormBlock {
+  margin: 0 auto;
+  width: 220px;
+  min-height: 150px;
+  margin-top: 100px;
+  text-align: center;
+}
+.form {
+  width: 100%;
+  float: left;
+  height: 30px;
+  font-size: 15px;
+  margin-bottom: 5px;
+
+}
+.registration {
+  float: left;
+  margin: 0 68px;;
+}
+.registrationForm {
+  width: 400px;
+  margin: 100px auto;
+  text-align: center;
+
+
+}
+.wrapp-from input {
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  height: 30px;
+  width: 100%;
+  margin: 5px 0;
+  font-size: 15px;
+}
