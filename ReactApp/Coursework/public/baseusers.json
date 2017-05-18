@@ -1,0 +1,12 @@
+{
+	"users": [
+        {
+			"fullName": "fullName",
+			"emailAddress": "emailAddress",
+            "Sex": "Sex",
+            "Age": "Age",
+            "Password": "Password",
+            "repeatPassword": "repeatPassword"
+		}
+	]
+}

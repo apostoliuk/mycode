@@ -6,7 +6,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 let initialState = [
-  {show: true}
+  {show: true},
 ];
  
 function showForm(state = initialState, action) {
@@ -15,6 +15,13 @@ function showForm(state = initialState, action) {
       return [
         {show : !action.payload}
       ];
+
+    case 'USERS': 
+      return [
+        ...state,
+        {firebaseState: action.payload}
+      ];
+      
       default: 
       break;
   }
@@ -28,4 +35,5 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
 

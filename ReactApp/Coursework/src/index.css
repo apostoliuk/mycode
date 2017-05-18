@@ -43,3 +43,14 @@ a {
   margin: 5px 0;
   font-size: 15px;
 }
+.submit {
+  width: 70%;
+  height: 50px;
+  border: 2px solid #777;
+  margin: 0 auto;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+.submit:hover {
+  background-color: #999;
+}
