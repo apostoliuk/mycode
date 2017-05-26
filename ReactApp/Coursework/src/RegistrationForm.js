@@ -13,8 +13,8 @@ const config = {
 }
 
 firebase.initializeApp(config);
-export default class RegistrationForm extends Component {
 
+export default class RegistrationForm extends Component {
     toggleShow() {
         this.props.onToggleShow(this.props.store[0].show);
     }
@@ -45,7 +45,6 @@ export default class RegistrationForm extends Component {
 
         }
     }
-
     render() {
         return (
             <div className="registrationForm">

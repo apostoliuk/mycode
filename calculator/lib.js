@@ -11,20 +11,12 @@ let one = () => document.getElementById("mainForm").value += 1,
     nine = () => document.getElementById("mainForm").value += 9,
     zero = () => document.getElementById("mainForm").value += 0,
     result = () => zzz(),
-    
                         /*operatoin*/
-    
     minus = () => document.getElementById("mainForm").value += '-',
     plus = () => document.getElementById("mainForm").value += '+',
     multiplication = () => document.getElementById("mainForm").value += '*',
     divizion = () => document.getElementById("mainForm").value += '/',
     clearing = () => document.getElementById("mainForm").value = ' ';
-    
                         /*main Math Function*/
-
 let getVal = () => document.getElementById("mainForm").value;
 let zzz = () => document.getElementById("mainForm").value = eval( getVal() );
-
-
-
-let fun = (a, b) => a+b;fun(2,4);

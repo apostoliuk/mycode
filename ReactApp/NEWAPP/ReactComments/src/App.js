@@ -2,10 +2,28 @@ import React, { Component } from 'react';
 import './index.css';
 import CommList from './CommList';
 import FormComm from './FormComm';
-//import {createStore} from 'redux';
+import { createStore } from 'redux';
 import ReactMixin from 'react-mixin';
 import ReactFireMixin from 'reactfire'; 
 import * as firebase from 'firebase';
+
+const store = createStore(commentsStore);
+
+function commentsStore(state = [], action) {
+    if(action.type === 'COMMLOADER') {
+        return [
+            ...state,
+            action.payload
+        ]
+    }
+}
+
+store.subscribe(() => console.log('store changed', store.getState()));
+
+store.dispatch({
+    type: 'COMMLOADER',
+    payload: true
+});
 
 export default class App extends Component {
     constructor() {
@@ -34,5 +52,3 @@ export default class App extends Component {
     }
 }
 ReactMixin(App.prototype, ReactFireMixin);
-
-

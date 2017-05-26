@@ -3,8 +3,6 @@ import ReactMixin from 'react-mixin';
 import ReactFireMixin from 'reactfire'; 
 import * as firebase from 'firebase';
 
-
-
 export default class Auth extends Component {
     constructor(props) {
         super();
@@ -12,16 +10,24 @@ export default class Auth extends Component {
             users: []
         }
     }
+
     eacher() {
         return this.bindAsArray(firebase.database().ref().child('users'), 'users');
     }
+
     componentDidMount() {
         this.eacher();
+        setTimeout(this.delayUploader.bind(this), 10);   
+        
     }
-    
+
+    delayUploader() {
+        this.props.pushUsers(this.state.users);       
+    }
+
+
     pushInStore() {
-        this.props.pushUsers(this.state.users);
-        console.log(this.props.store);
+        console.log(this.props.store);     
     }
     
     toggleShow() { 
@@ -30,6 +36,9 @@ export default class Auth extends Component {
     }
     
     render() {
+        if(this.props.store[this.props.store.length]) {
+
+        }
         return (
             <div className="FormBlock">
                 <h1>Авторизація</h1>

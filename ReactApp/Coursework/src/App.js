@@ -5,9 +5,6 @@ import RegistrationForm from './RegistrationForm';
 import ReactMixin from 'react-mixin';
 import ReactFireMixin from 'reactfire'; 
 
-
-
-
 class App extends Component {
   render() {
     let showFormsLogin;
