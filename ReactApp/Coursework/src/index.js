@@ -15,20 +15,17 @@ function showForm(state = initialState, action) {
       return [
         {show : !action.payload}
       ];
-
     case 'USERS': 
       return [
         ...state,
         {firebaseState: action.payload}
       ];
-      
       default: 
       break;
   }
   return state;
 }
 const store = createStore(showForm);
-
 ReactDOM.render(
   <Provider store={store}>
     <App initialState={initialState}/>

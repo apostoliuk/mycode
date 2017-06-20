@@ -32,7 +32,6 @@ export default class Auth extends Component {
     
     toggleShow() { 
         this.props.onToggleShow(this.props.store[0].show);
-        
     }
     
     render() {
