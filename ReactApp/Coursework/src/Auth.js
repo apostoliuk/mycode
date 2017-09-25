@@ -24,7 +24,7 @@ export default class Auth extends Component {
     delayUploader() {
         this.props.pushUsers(this.state.users);       
     }
-
+ 
 
     pushInStore() {
         console.log(this.props.store);     
